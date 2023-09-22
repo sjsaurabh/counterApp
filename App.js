@@ -1,18 +1,17 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import Index from './src/Index'
+import ApiGetData from './src2/ApiGetData'
+import Index from './src2/Index'
 import { Provider } from 'react-redux'
-import store from './src/store'
+import store from './src2/Store'
 
 export default function App() {
-  
-  return(
-
+  return (
     <Provider store={store}>
 
-    <Index/>
-  </Provider>
-    )
+      <Index/>
+    </Provider>
+  )
 }
 
 const styles = StyleSheet.create({})
